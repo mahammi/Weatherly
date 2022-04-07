@@ -1,4 +1,3 @@
-
 const key = "eabfde39a035c674d3d35dfcda3180be"
 const weatherInfo = document.querySelector(".weather-info");
 const searchButton = document.querySelector("button");
