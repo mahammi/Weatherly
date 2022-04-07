@@ -25,13 +25,16 @@ const updateIcon = (data) => {
     switch(weatherID){
         case 'Thunderstorm':
             document.body.style.backgroundImage = "url('/images/thunderstorm.jpg')";
+            document.querySelector(".icon").src ="/icons/thunderstorm.png";
             break;
         case 'Drizzle':
         case 'Rain':
             document.body.style.backgroundImage = "url('/images/rain.jpg')";
+            document.querySelector(".icon").src ="/icons/rain.png";
             break;
         case 'Snow':
             document.body.style.backgroundImage = "url('/images/snow.jpg')";
+            document.querySelector(".icon").src ="/icons/snow.png";
             break;
         case 'Mist':
         case 'Smoke':
@@ -42,12 +45,15 @@ const updateIcon = (data) => {
         case 'Squall':
         case 'Tornado':
             document.body.style.backgroundImage = "url('/images/atmospheric.jpg')";
+            document.querySelector(".icon").src ="/icons/atmosphere.png";
             break;
         case 'Clear':
             document.body.style.backgroundImage = "url('/images/clear.jpg')";
+            document.querySelector(".icon").src ="/icons/clear.png";
             break;
         case 'Clouds':
             document.body.style.backgroundImage = "url('/images/cloud.jpg')";
+            document.querySelector(".icon").src ="/icons/cloudy.png";
             break;
         default:
             document.body.style.backgroundImage = "url('/images/clear.jpg')";
@@ -60,7 +66,6 @@ const displayData = (data) =>{
     let condition = data.weather[0].main;
     let temp = Math.round(data.main.temp - 273.15); 
     updateIcon(data);
-    document.querySelector(".icon").src ="/icons/clear.png";
     weatherInfo.innerHTML = `<h1>${data.name}, ${data.sys.country}<h1>
                                 <h2>${temp}°C</h2>
                                 <h2>${condition}</h2>`
