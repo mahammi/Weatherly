@@ -1,0 +1,53 @@
+body{
+    margin:10%;
+    font-family: 'Fredoka', sans-serif;
+    background-image: url('images/clear.jpg');
+    background-position: center;
+    color:white;
+    text-align:center;
+}
+
+button{
+    font-family: inherit;
+    border-radius: 10px;
+}
+
+.weather-card{
+    
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 25px;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    margin: 2% auto;
+    overflow-wrap: break-word;
+    overflow:hidden;
+    padding: 0.5% 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 35%;
+    align-items: center;
+    
+}
+.city-name{
+    border-radius:10px;
+}
+.search{
+    width: auto;
+    margin: 5% auto;
+}
+
+.search input{
+    width:50%;
+}
+.weather-info{
+    text-align: left;
+    margin-right: 30%;
+    width:100%;
+}
+
+#title{
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.icon{
+    float:right;
+}
