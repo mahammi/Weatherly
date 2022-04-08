@@ -61,7 +61,6 @@ const updateIcon = (data) => {
 }
 
 const displayData = (data) =>{
-    console.log(data);
     let condition = data.weather[0].main;
     let temp = Math.round(data.main.temp - 273.15); 
     updateIcon(data);
