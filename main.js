@@ -15,6 +15,7 @@ const getWeather = () => {
 
     function errorMessage(){
         weatherInfo.innerHTML = `<h2>The city "${userEntry}" could not be found. Please try again!<h2>`;
+        document.querySelector(".icon").src ="";
     }
 }
 
